@@ -1,33 +1,41 @@
-document.write('<p>Estadísticas centro medico ñuñoa</p>');
+document.write('<h1>Estadísticas Centro Médico Ñuñoa</h1>');
+document.write('<h1>--------------------------------------------</h1>');
 
 var radiologia = [
-    {HORA:'11:00',ESPECIALISTA:'IGNACIO SCHULZ',PACIENTE:'FRANCISCA ROJAS',RUT:'9878782-1',PREVISIÓN: 'FONASA' },
-    {HORA:'11:30',ESPECIALISTA:'FEDERICO SUBERCASEAUX',PACIENTE:'PAMELA ESTRADA',RUT:'15345241-3',PREVISIÓN:'ISAPRE'},
-    {HORA:'15:00',ESPECIALISTA:'FERNANDO WURTHZ',PACIENTE:'ARMANDO LUNA',RUT:'16445345-9',PREVISIÓN:'ISAPRE'},
-    {HORA:'15:30',ESPECIALISTA:'ANA MARIA GODOY',PACIENTE:'MANUEL GODOY',RUT:'17666419-0',PREVISIÓN:'FONASA'},
-    {HORA:'16:00',ESPECIALISTA:'PATRICIA SUAZO',PACIENTE:'RAMON ULLOA',RUT:'14989389-K',PREVISIÓN:'FONASA'},
+    {Hora:'11:00',Especialista:'IGNACIO SCHULZ',Paciente:'FRANCISCA ROJAS',Rut:'9878782-1',Previsión: 'FONASA' },
+    {Hora:'11:30',Especialista:'FEDERICO SUBERCASEAUX',Paciente:'PAMELA ESTRADA',Rut:'15345241-3',Previsión:'ISAPRE'},
+    {Hora:'15:00',Especialista:'FERNANDO WURTHZ',Paciente:'ARMANDO LUNA',Rut:'16445345-9',Previsión:'ISAPRE'},
+    {Hora:'15:30',Especialista:'ANA MARIA GODOY',Paciente:'MANUEL GODOY',Rut:'17666419-0',Previsión:'FONASA'},
+    {Hora:'16:00',Especialista:'PATRICIA SUAZO',Paciente:'RAMON ULLOA',Rut:'14989389-K',Previsión:'FONASA'},
 ];
 
 var traumatologia = [
-    {HORA:'8:00',ESPECIALISTA:'MARIA PAZ ALTUZARRA',PACIENTE:'PAULA SANCHEZ',RUT:'15554774-5',PREVISIÓN:'FONASA'},
-    {HORA:'10:00',ESPECIALISTA:'RAUL ARAYA',PACIENTE:'ANGÉLICA NAVAS',RUT:'15444147-9',PREVISIÓN:'ISAPRE'},
-    {HORA:'10:30',ESPECIALISTA:'MARIA ARRIAGADA',PACIENTE:'ANA KLAPP',RUT:'17879423-9',PREVISIÓN:'ISAPRE'},
-    {HORA:'11:00',ESPECIALISTA:'ALEJANDRO BADILLA',PACIENTE:'FELIPE MARDONES',RUT:'1547423-6',PREVISIÓN:'ISAPRE'},
-    {HORA:'11:30',ESPECIALISTA:'CECILIA BUDNIK',PACIENTE:'DIEGO MARRE',RUT:'16554741-K',PREVISIÓN:'FONASA'},
-    {HORA:'12:00',ESPECIALISTA:'ARTURO CAVAGNARO',PACIENTE:'CECILIA MENDEZ',RUT:'9747535-8',PREVISIÓN:'ISAPRE'},
-    {HORA:'12:30',ESPECIALISTA:'ANDRES KANACRI',PACIENTE:'MARCIAL SUAZO',RUT:'11254785-5',PREVISIÓN:'ISAPRE'},
+    {Hora:'8:00',Especialista:'MARIA PAZ ALTUZARRA',Paciente:'PAULA SANCHEZ',Rut:'15554774-5',Previsión:'FONASA'},
+    {Hora:'10:00',Especialista:'RAUL ARAYA',Paciente:'ANGÉLICA NAVAS',Rut:'15444147-9',Previsión:'ISAPRE'},
+    {Hora:'10:30',Especialista:'MARIA ARRIAGADA',Paciente:'ANA KLAPP',Rut:'17879423-9',Previsión:'ISAPRE'},
+    {Hora:'11:00',Especialista:'ALEJANDRO BADILLA',Paciente:'FELIPE MARDONES',Rut:'1547423-6',Previsión:'ISAPRE'},
+    {Hora:'11:30',Especialista:'CECILIA BUDNIK',Paciente:'DIEGO MARRE',Rut:'16554741-K',Previsión:'FONASA'},
+    {Hora:'12:00',Especialista:'ARTURO CAVAGNARO',Paciente:'CECILIA MENDEZ',Rut:'9747535-8',Previsión:'ISAPRE'},
+    {Hora:'12:30',Especialista:'ANDRES KANACRI',Paciente:'MARCIAL SUAZO',Rut:'11254785-5',Previsión:'ISAPRE'},
 ];
 
 var dental = [
-    {HORA:'8:30',ESPECIALISTA:'ANDREA ZUÑIGA',PACIENTE:'MARCELA RETAMAL',RUT:'11123425-6',PREVISIÓN:'ISAPRE'},
-    {HORA:'11:00',ESPECIALISTA:'MARIA PIA ZAÑARTU',PACIENTE:'ANGEL MUÑOZ',RUT:'9878789-2',PREVISIÓN:'ISAPRE'},
-    {HORA:'11:30',ESPECIALISTA:'SCARLETT WITTING',PACIENTE:'MARIO KAST',RUT:'7998789-5',PREVISIÓN:'FONASA'},
-    {HORA:'13:00',ESPECIALISTA:'FRANCISCO VON TEUBER',PACIENTE:'KARIN FERNANDEZ',RUT:'18887662-K',PREVISIÓN:'FONASA'},
-    {HORA:'13:30',ESPECIALISTA:'EDUARDO VIÑUELA',PACIENTE:'HUGO SANCHEZ',RUT:'17665461-4',PREVISIÓN:'FONASA'},
-    {HORA:'14:00',ESPECIALISTA:'RAQUEL VILLASECA',PACIENTE:'ANA SEPULVEDA',RUT:'14441281-0',PREVISIÓN:'ISAPRE'},
+    {Hora:'8:30',Especialista:'ANDREA ZUÑIGA',Paciente:'MARCELA RETAMAL',Rut:'11123425-6',Previsión:'ISAPRE'},
+    {Hora:'11:00',Especialista:'MARIA PIA ZAÑARTU',Paciente:'ANGEL MUÑOZ',Rut:'9878789-2',Previsión:'ISAPRE'},
+    {Hora:'11:30',Especialista:'SCARLETT WITTING',Paciente:'MARIO KAST',Rut:'7998789-5',Previsión:'FONASA'},
+    {Hora:'13:00',Especialista:'FRANCISCO VON TEUBER',Paciente:'KARIN FERNANDEZ',Rut:'18887662-K',Previsión:'FONASA'},
+    {Hora:'13:30',Especialista:'EDUARDO VIÑUELA',Paciente:'HUGO SANCHEZ',Rut:'17665461-4',Previsión:'FONASA'},
+    {Hora:'14:00',Especialista:'RAQUEL VILLASECA',Paciente:'ANA SEPULVEDA',Rut:'14441281-0',Previsión:'ISAPRE'},
 ];
 
-document.write(`<p>Cantidad de Atenciones Radiología: ${radiologia.length}</p>`);
-document.write(`<p>Cantidad de Atenciones Traumatología: ${traumatologia.length}</p>`);
+
+// CANTIDAD DE ATENCIONES
+
+document.write(`<h2>Cantidad de Atenciones Radiología: ${radiologia.length}</h2>`);
+document.write(`<h2>Cantidad de Atenciones Traumatología: ${traumatologia.length}</h2>`);
+document.write(`<h2>Cantidad de Atenciones Dentales: ${dental.length}</h2>`);
+
+// PRIMERA Y ÚLTIMA ATENCIÓN PACIENTES
+
 
 
