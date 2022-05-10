@@ -1,5 +1,5 @@
 document.write('<h1>Estadísticas Centro Médico Ñuñoa</h1>');
-document.write('<h1>--------------------------------------------</h1>');
+document.write('<h1>----------------------------------------------</h1>');
 
 var radiologia = [
     {Hora:'11:00',Especialista:'IGNACIO SCHULZ',Paciente:'FRANCISCA ROJAS',Rut:'9878782-1',Previsión: 'FONASA' },
@@ -37,5 +37,6 @@ document.write(`<h2>Cantidad de Atenciones Dentales: ${dental.length}</h2>`);
 
 // PRIMERA Y ÚLTIMA ATENCIÓN PACIENTES
 
+document.write(`<h6>PRIMERA ATENCIÓN: ${radiologia[0].Paciente} -- ${radiologia[0].Previsión} | ÚLTIMA ATENCIÓN: ${radiologia[radiologia.length-1].Paciente} -- ${radiologia[radiologia.length-1].Previsión}</h6>`);
 
 
